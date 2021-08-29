@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+
+            android:id="@+id/btn_tv"
+            android:layout_width="@dimen/block_size"
+            android:layout_height="@dimen/block_size"
+            android:layout_margin="8dp"
+            android:onClick="open"
+            android:text="电视"
+            android:textSize="45sp" />
+        <Button
+            android:id="@+id/btn_market"
+            android:layout_width="@dimen/block_size"
+            android:layout_height="@dimen/block_size"
+            android:layout_margin="8dp"
+            android:onClick="open"
+            android:text="应用市场"
+            android:textSize="45sp" />
+
+
+        <Button
+            android:id="@+id/btn_desktop"
+            android:layout_width="@dimen/block_size"
+            android:layout_height="@dimen/block_size"
+            android:layout_margin="8dp"
+            android:onClick="open"
+            android:text="主页"
+            android:textSize="45sp" />
+    </LinearLayout>
+
+<LinearLayout
+
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="自动运行=>"
+        android:textColor="#f00"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+/>    <ImageView
+
+        android:id="@+id/iv_app"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+<TextView
+    android:id="@+id/tv_default_app"
+    android:layout_weight="1"
+    android:layout_marginLeft="2dp"
+    android:textColor="#000"
+    android:minWidth="10dp"
+    android:layout_width="match_parent"
+    android:textSize="15sp"
+    android:text="没有应用选择"
+
+    android:layout_height="wrap_content"/>
+
+<Button
+    android:layout_marginLeft="30dp"
+    android:layout_width="wrap_content"
+    android:text="更换默认启动"
+    android:onClick="open"
+    android:id="@+id/btn_choose_app"
+    android:layout_height="wrap_content"/>
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="默认启动应用包名,没有选择应用则默认启动桌面应用"
+        android:textColor="#ccc"
+        android:textSize="12sp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="\n开机后数秒后自动运行默认应用\n开机后首次按按返回键取消自动启动\n按菜单直达电视\n按菜单直达电视默认电视->电视家3.0\n默认应用市场->蚂蚁应用市场\n默认主页->已安装桌面\n请不用卸载这几个应用,
+       以及不要卸载破解安装应用限制软件,以及本伪桌面软件。"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
